@@ -22,7 +22,7 @@ end
 describe Test do
   let(:test) { Test.new}
 
-  it test1" do
+  it "test1" do
     expect(test.replicate(3,5)).to eq([5, 5, 5])
   end
 
