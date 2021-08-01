@@ -19,6 +19,10 @@ class Menu
     puts Dir.entries("Tasks").reject {|f| File.directory?(f) || f[0].include?('.')}
   end
 
+  def self.testsAll
+    puts File.read("Test.txt")
+  end
+
 
 
 
