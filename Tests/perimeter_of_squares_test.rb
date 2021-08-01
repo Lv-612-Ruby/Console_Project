@@ -3,7 +3,7 @@
 
 
 require 'rspec/autorun'
-require_relative '/Users/ears/Desktop/Ruby/Yazvinskyi/HW2/Unit Testing/perimeter_of_squares.rb'
+require_relative '../Tasks/perimeter_of_squares.rb'
 
 RSpec.describe '#perimeter' do
 
