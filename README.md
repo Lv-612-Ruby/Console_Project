@@ -17,7 +17,7 @@ https://www.codewars.com/kata/floating-point-approximation-i
 https://www.codewars.com/kata/artificial-rain
 
 
-<h1>Nestor</h1>
+<h1>Khomytskiy</h1>
 
 8-kyu
 https://www.codewars.com/kata/count-of-positives-slash-sum-of-negatives
