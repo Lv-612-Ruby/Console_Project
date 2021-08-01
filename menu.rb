@@ -1,14 +1,19 @@
 class Menu
   def self.help
     puts "This is the help menu."
-    puts " help - displays all commands"
-    puts " tasks - displays all tasks"
-    puts " tests - displays tests"
-    puts " testsAll - displays all tests"
-    puts " test testfile_name - runs the test testfile_name"
-    puts " show file_name - shows all the code contained in the file file_name"
-    puts " runtask file_name – launches the task contained in the file file_name"
-    puts " runtest file_name – launches the test contained in the file file_name"
+    puts "    help - displays all commands"
+    puts "    tasks - displays all tasks"
+    puts "    tests - displays tests"
+    puts "    testsAll - displays all tests"
+    puts "    test testfile_name - runs the test testfile_name"
+    puts "    show file_name - shows all the code contained in the file file_name"
+    puts "    runtask file_name – launches the task contained in the file file_name"
+    puts "    runtest file_name – launches the test contained in the file file_name"
+    puts "    authors - info about each of contributors"
+  end
+
+  def self.authors
+    puts File.read("Authors.txt")
   end
 
   def self.tests
