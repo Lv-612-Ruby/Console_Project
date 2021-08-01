@@ -21,3 +21,4 @@ loop do
     puts 'It is wrong command! Use \'help\' command.'
   end
 end
+
