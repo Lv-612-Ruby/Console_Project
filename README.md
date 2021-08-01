@@ -16,6 +16,25 @@ https://www.codewars.com/kata/floating-point-approximation-i
 5-kyu
 https://www.codewars.com/kata/artificial-rain
 
+  
+<h1>Yazvinskyi</h1>
+
+8-kyu
+https://www.codewars.com/kata/my-head-is-at-the-wrong-end
+
+8-kyu
+https://www.codewars.com/kata/to-square-root-or-not-to-square-root
+
+7-kyu
+https://www.codewars.com/kata/recursive-replication
+
+6-kyu
+https://www.codewars.com/kata/build-a-pile-of-cubes
+
+5-kyu
+https://www.codewars.com/kata/5868b2de442e3fb2bb000119
+</body>  
+
 
 <h1>Khomytskiy</h1>
 
@@ -89,20 +108,3 @@ https://www.codewars.com/kata/easy-balance-checking
 https://www.codewars.com/kata/find-the-smallest
 
 
-<h1>Yazvinskyi</h1>
-
-8-kyu
-https://www.codewars.com/kata/my-head-is-at-the-wrong-end
-
-8-kyu
-https://www.codewars.com/kata/to-square-root-or-not-to-square-root
-
-7-kyu
-https://www.codewars.com/kata/recursive-replication
-
-6-kyu
-https://www.codewars.com/kata/build-a-pile-of-cubes
-
-5-kyu
-https://www.codewars.com/kata/5868b2de442e3fb2bb000119
-</body>  
