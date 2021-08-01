@@ -3,6 +3,7 @@
 
 
 require 'rspec/autorun'
+require 'pp'
 
 class Calculator
   def round(number)
@@ -12,11 +13,12 @@ class Calculator
   end
 end
 
-describe Calculator do
+ describe Calculator do
   let(:calculator) { Calculator.new}
 
-  it "right number  1" do
-    expect(calculator.round(4.659725356)).to eq(4.66)
+   it "right number  1" do
+     a = expect(calculator.round(4.659725356)).to eq(4.66)
+     pp a
   end
 
 
@@ -31,4 +33,6 @@ describe Calculator do
   it "0 - zero " do
     expect(calculator.round(0)).to eq(0)
   end
-end
+  puts a.to_yaml
+ end
+

@@ -23,6 +23,18 @@ class Menu
     puts File.read("Test.txt")
   end
 
+  def self.runtest(file_name)
+      directorylist = %x[find . -name '*spec.rb' | sort]
+      all_tests = directorylist.split(' ')
+      all_tests.each do |x|
+        system("rspec '#{all_tests[all_tests.index(x)]}'") if x.include? file_name
+      end
+      end
+
+  def self.run(file_name)
+    file_name = 'Tasks/' + file_name
+    require_relative file_name
+  end
 
 
 

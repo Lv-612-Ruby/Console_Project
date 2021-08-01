@@ -2,6 +2,7 @@ require_relative 'menu'
 require 'colorize'
 
 loop do
+  puts
   puts 'Write your command  '.blue
   input = gets
   console = input.split(' ')
@@ -11,7 +12,7 @@ loop do
       eval(comand)
     end
   elsif console.length > 1
-    if console[0] == 'show' or console[0] == 'runtask' or console[0] == 'runtest' or console[0] == 'test'
+    if console[0] == 'show' or console[0] == 'run' or console[0] == 'runtest' or console[0] == 'test'
       comand = "Menu." + console[0] + "('" + console[1] + "')"
       eval(comand)
 

@@ -14,7 +14,25 @@ def artificial_rain(garden)
   return longest_section > current_section ? longest_section : current_section
 end
 
-puts artificial_rain([4, 2, 3, 3, 2])
+# puts artificial_rain([4, 2, 3, 3, 2])
+
+
+def run_task
+  input = nil
+  until input
+    print 'Enter number array (1 2 ..): '
+    input = gets.chomp
+    array = parse_to_array(input)
+  end
+  puts artificial_rain(array)
+end
+
+def parse_to_array(input)
+  array = input.delete(' ')
+  array.each_char.map(&:to_i)
+rescue StandardError
+  nil
+end
 
 #Маленький Петя часто відвідує бабусю на селі.
 # У бабусі є великий вертикальний сад,

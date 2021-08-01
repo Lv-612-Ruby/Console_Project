@@ -14,6 +14,7 @@ def square_or_square_root(arr)
 end
 
 
-puts square_or_square_root([4, 3, 9, 7, 2, 1 ]) #[2, 9, 3, 49, 4, 1] -- right answer
-puts square_or_square_root([100, 101, 5, 5, 1, 1]) #[10, 10201, 25, 25, 1, 1] -- right answer
-puts square_or_square_root([1, 2, 3, 4, 5, 6] )# [1, 4, 9, 2, 25, 36] -- right answer
+puts ("input: 4, 3, 9, 7, 2, 1 ")
+p square_or_square_root([4, 3, 9, 7, 2, 1 ]) #[2, 9, 3, 49, 4, 1] -- right answer
+# puts square_or_square_root([100, 101, 5, 5, 1, 1]) #[10, 10201, 25, 25, 1, 1] -- right answer
+# puts square_or_square_root([1, 2, 3, 4, 5, 6] )# [1, 4, 9, 2, 25, 36] -- right answer

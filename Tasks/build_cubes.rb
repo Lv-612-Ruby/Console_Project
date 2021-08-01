@@ -30,5 +30,7 @@ def find_nb(m)
     end
   end
 
-puts find_nb(4183059834009)  #2022 -- right answers
-puts find_nb(135440716410000)  #4824 -- right answers
+
+get
+# puts find_nb(4183059834009)  #2022 -- right answers
+# puts find_nb(135440716410000)  #4824 -- right answers
