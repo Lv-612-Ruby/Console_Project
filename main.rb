@@ -7,7 +7,7 @@ loop do
   input = gets
   console = input.split(' ')
   if console.length == 1
-    if console[0] == 'help' or console[0] == 'tasks' or console[0] == 'tests' or console[0] == 'testsAll'  or console[0] == 'exit'
+    if console[0] == 'help' or console[0] == 'authors'  or console[0] == 'tasks' or console[0] == 'tests' or console[0] == 'testsAll'  or console[0] == 'exit'
       comand = "Menu." + console[0]
       eval(comand)
     end
