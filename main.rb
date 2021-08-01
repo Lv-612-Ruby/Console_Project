@@ -11,14 +11,10 @@ loop do
       comand = "Menu." + console[0]
       eval(comand)
     end
-  elsif console.length > 1
-    if console[0] == 'show' or console[0] == 'run' or console[0] == 'runtest' or console[0] == 'test'
+  else
       comand = "Menu." + console[0] + "('" + console[1] + "')"
       eval(comand)
-
     end
-  else
-    puts 'It is wrong command! Use \'help\' command.'
-  end
+
 end
 

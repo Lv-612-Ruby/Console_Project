@@ -11,7 +11,8 @@ class Menu
     puts
     puts "    runtest file_name – launches the test contained in the file file_name".red
     puts "    runtask file_name – launches the task contained in the file file_name".red
-    puts "    show file_name - shows all the code contained in the file file_name".yellow
+    puts "    show file_name - shows all the code contained in the file task file_name".yellow
+    puts "    showtest file_name - shows all the code contained in the file test file_name".yellow
     puts
     puts "    authors - info about each of contributors"
   end
@@ -32,11 +33,27 @@ class Menu
     puts File.read("Test.txt")
   end
 
-  def self.run(file_name)
-    file_name = 'Tasks/' + file_name
-    require_relative file_name
+  def self.run(item)
+    item = 'Tasks/' + item
+    require_relative item
   end
 
+  def self.runtest(item)
+    directorylist = %x[find . -name '*test.rb' | sort]
+    all_tests = directorylist.split(' ')
+    all_tests.each do |x|
+      system("rspec '#{all_tests[all_tests.index(x)]}'") if x.include? item
+    end
+    end
 
+  def self.show(item)
+    item = 'Tasks/' + item
+    puts File.open(item).read
+  end
+
+  def self.showtest(item)
+    item = 'Tests/' + item
+    puts File.open(item).read
+  end
 
 end
