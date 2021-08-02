@@ -10,7 +10,7 @@ class Menu
     puts "    link_to_task - displays all tests".blue
     puts
     puts "    runtest file_name – launches the test contained in the file file_name".red
-    puts "    runtask file_name – launches the task contained in the file file_name".red
+    puts "    run file_name – launches the task contained in the file file_name".red
     puts "    show file_name - shows all the code contained in the file task/test file_name".yellow
     puts
     puts "    authors - info about each of contributors"
@@ -38,7 +38,8 @@ class Menu
   end
 
   def self.runtest(item)
-    %x[find . -name '*test.rb' | sort]
+    a = %x[find . -name '*test.rb' | sort]
+    all_tests = a.split
     all_tests.each do |x|
       system("rspec '#{all_tests[all_tests.index(x)]}'") if x.include? item
     end
