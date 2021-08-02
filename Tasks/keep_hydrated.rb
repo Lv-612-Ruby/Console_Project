@@ -3,7 +3,9 @@ def litres(time)
   return l.floor
 end
 
-puts litres(2) #1
+puts "Input: 2"
+print "Output: "
+p litres(2) #1
 # puts litres(1) #0
 # puts litres(10) #5
 # puts litres(1.4) #0
