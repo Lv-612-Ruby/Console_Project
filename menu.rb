@@ -11,8 +11,7 @@ class Menu
     puts
     puts "    runtest file_name – launches the test contained in the file file_name".red
     puts "    runtask file_name – launches the task contained in the file file_name".red
-    puts "    show file_name - shows all the code contained in the file task file_name".yellow
-    puts "    showtest file_name - shows all the code contained in the file test file_name".yellow
+    puts "    show file_name - shows all the code contained in the file task/test file_name".yellow
     puts
     puts "    authors - info about each of contributors"
   end
@@ -47,13 +46,17 @@ class Menu
     end
 
   def self.show(item)
-    item = 'Tasks/' + item
-    puts File.open(item).read
-  end
-
-  def self.showtest(item)
-    item = 'Tests/' + item
-    puts File.open(item).read
+    if item.include? 'test'
+      item = 'Tests/' + item
+    else 
+      item = 'Tasks/' + item
+    end
+    file = File.open(item)
+    for line in file 
+      if line[0] != "#"
+        puts line
+      end
+    end
   end
 
 end
