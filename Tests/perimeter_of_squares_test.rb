@@ -20,7 +20,7 @@ RSpec.describe '#perimeter' do
   end
 
   it 'returns error' do
-    expect { perimeter }.to raise_error(ArgumentError)
+    expect{perimeter}.to raise_error(ArgumentError)
   end
 end
 
