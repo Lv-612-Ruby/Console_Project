@@ -42,6 +42,7 @@ class Menu
     all_tests.each do |x|
       system("rspec '#{all_tests[all_tests.index(x)]}'") if x.include? item
     end
+    end
 
   def self.show(item)
     if item.include? 'test'
@@ -55,6 +56,6 @@ class Menu
         puts line
       end
     end
-  end
 
-end
+  end
+    end
