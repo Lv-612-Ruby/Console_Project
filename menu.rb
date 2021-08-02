@@ -7,7 +7,7 @@ class Menu
     puts
     puts "    tasks - displays all tasks".blue
     puts "    tests - displays tests".blue
-    puts "    testsAll - displays all tests".blue
+    puts "    link_to_task - displays all tests".blue
     puts
     puts "    runtest file_name – launches the test contained in the file file_name".red
     puts "    runtask file_name – launches the task contained in the file file_name".red
@@ -28,7 +28,7 @@ class Menu
     puts Dir.entries("Tasks").reject {|f| File.directory?(f) || f[0].include?('.')}
   end
 
-  def self.testsAll
+  def self.link_to_task
     puts File.read("Test.txt")
   end
 
