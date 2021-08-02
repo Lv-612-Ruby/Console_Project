@@ -15,12 +15,12 @@ begin
          console[0] == 'tests' or
          console[0] == 'link_to_task'
 
-        comand = "Menu." + console[0]
-        eval(comand)
+        command = "Menu." + console[0]
+        eval(command)
       end
     else
-        comand = "Menu." + console[0] + "('" + console[1] + "')"
-        eval(comand)
+        command = "Menu." + console[0] + "('" + console[1] + "')"
+        eval(command)
       end
   rescue
     "This is the issue"
