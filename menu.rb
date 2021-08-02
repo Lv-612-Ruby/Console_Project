@@ -38,11 +38,9 @@ class Menu
   end
 
   def self.runtest(item)
-    directorylist = %x[find . -name '*test.rb' | sort]
-    all_tests = directorylist.split(' ')
+    %x[find . -name '*test.rb' | sort]
     all_tests.each do |x|
       system("rspec '#{all_tests[all_tests.index(x)]}'") if x.include? item
-    end
     end
 
   def self.show(item)
