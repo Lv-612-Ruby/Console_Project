@@ -1,0 +1,28 @@
+require 'rspec/autorun'
+class Test
+
+def smallest(n)
+    result = [n]
+    size = n.to_s.size
+    size.times do |i1|
+      size.times do |i2|
+        digits = n.to_s
+        x = digits.slice!(i1)
+        digits.insert(i2, x)
+        result = [digits.to_i, i1, i2] if digits.to_i < result.first
+      end
+    end
+    result
+  end
+end
+
+describe Test do
+    test = Test.new
+        it 'Test smallest' do
+            expect(test.smallest(2616235)).to eq([1266235, 2, 0])
+            expect(test.smallest(209917)).to eq([29917, 0, 1])
+            expect(test.smallest(238565)).to eq([235658, 2, 5])
+            expect(test.smallest(269045)).to eq([26945, 3, 0])
+            expect(test.smallest(296837)).to eq([239687, 4, 1])
+        end
+    end

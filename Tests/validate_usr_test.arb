@@ -1,0 +1,23 @@
+require 'rspec/autorun'
+
+class Test
+def validate_usr(username)
+    username.match?(/^[a-z0-9_]{4,16}$/)
+end
+end
+
+
+describe Test do
+    test = Test.new
+    it 'incorect input' do 
+        expect(test.validate_usr('asddsa')).to eq(true)
+        expect(test.validate_usr('a')).to eq(false)
+        expect(test.validate_usr('Hass')).to eq(false)
+        expect(test.validate_usr('Hasd_12assssaassasasassasas')).to eq(false)
+        expect(test.validate_usr('')).to eq(false)
+        expect(test.validate_usr('______')).to eq(true)
+        expect(test.validate_usr('012')).to eq(false)
+        expect(test.validate_usr('p1pp1')).to eq(true)
+        expect(test.validate_usr('asdf43_34')).to eq(true)
+    end
+end

@@ -1,0 +1,20 @@
+require 'rspec/autorun'
+class Test
+def easyline(n)
+    n == 0 ? 1 : factorial(2*n) / factorial(n)**2
+end
+  
+def factorial(n)
+    n == 0 ? 1 : (1..n).inject(:*)
+end
+end
+describe Test do
+test = Test.new
+    it 'incorect' do
+        expect(test.easyline(7)).to eq(3432)
+        expect(test.easyline(13)).to eq(10400600)
+        expect(test.easyline(17)).to eq(2333606220)
+        expect(test.easyline(19)).to eq(35345263800)
+    end
+end
+
