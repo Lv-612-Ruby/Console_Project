@@ -1,33 +1,24 @@
-# My head is at the wrong end!
-#
-# https://www.codewars.com/kata/my-head-is-at-the-wrong-end
-
-
-require 'rspec/autorun'
-
-class Test
-  def fix_the_meerkat(arr)
-    return arr.reverse()
-
+class KeepHydrated
+  def litres(time)
+    l = time * 0.5
+    return l.floor
   end
 end
 
-describe Test do
-  let(:test) { Test.new}
+describe KeepHydrated do
+  let(:keep) { KeepHydrated.new }
 
-  it "test1" do
-    expect(test.fix_the_meerkat(["tail", "body", "head"])).to eq(["head", "body", "tail"])
+  it "right number" do
+    expect(keep.litres(2)).to eq(1)
   end
-
-  it "test2" do
-    expect(test.fix_the_meerkat(["bottom", "middle", "top"])).to eq(["top", "middle", "bottom"])
+  it "big number" do
+    expect(keep.litres(2500)).to eq(1250)
   end
-
-  it "test3" do
-    expect(test.fix_the_meerkat(["lower legs", "torso", "upper legs"])).to eq(["upper legs", "torso", "lower legs"])
+  it "zero" do
+    expect(keep.litres(0)).to eq(0)
   end
-
-  it "test4" do
-    expect(test.fix_the_meerkat(["123", "gfh grt", "SDRFS"])).to eq(["SDRFS", "gfh grt", "123"])
+  it "negative number" do
+    expect(keep.litres(-5)).to eq(0)
   end
 end
+
