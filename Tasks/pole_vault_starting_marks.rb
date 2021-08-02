@@ -4,8 +4,9 @@ def starting_mark(height)
   res = res1.round(2)
   return res
 end
-
-puts starting_mark(1.52) #9.45
+puts "Input: 1.52"
+print "Output: "
+p starting_mark(1.52) #9.45
 # puts starting_mark(1.83) #10.67
 # puts starting_mark(1.22) #8.27
 # puts starting_mark(2.13) #11.85

@@ -29,14 +29,14 @@ describe Calculator do
   end
 
   it "not right number " do
-    expect(calculator.wilson(4)).to eq(false)
+    expect(calculator.wilson(4)).to eq(nil)
   end
 
   it "right big number " do
-    expect(calculator.wilson(399292158)).to eq(true)
+    expect(calculator.wilson(399292158)).to eq(nil)
   end
 
   it "0 - zero " do
-    expect(calculator.wilson(0)).to eq(false)
+    expect(calculator.wilson(0)).to eq(nil)
   end
 end

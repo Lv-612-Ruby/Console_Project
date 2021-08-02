@@ -10,7 +10,7 @@
 def square_or_square_root(arr)
   result = Array.new
   for x in arr
-    root = x ** 0.5
+    root = x ** 0.5 #take the square
 
     if (Math.sqrt(x) % 1).zero?
       result.append(root)

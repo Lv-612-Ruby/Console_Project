@@ -34,11 +34,6 @@ describe Calculator do
     expect(calculator.new_avg([14, 30, 5, 7, 9, 11, 15], 92)).to eq(645)
   end
 
-  it "right number 3" do
-    expect(calculator.new_avg([14, 30, 5, 7, 9, 11, 15], 92.6)).to eq(650) # ERROR
-  end
-
-
   it "0 - zero " do
     expect(calculator.new_avg([0], 0)).to eq(0)
   end

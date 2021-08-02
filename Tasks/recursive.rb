@@ -1,4 +1,3 @@
-
 #kata 7
 #https://www.codewars.com/kata/recursive-replication
 #
@@ -8,7 +7,7 @@
 # For instance, replicate(3, 5) should return [5,5,5].
 # If the times argument is negative, return an empty array.
 # As tempting as it may seem, do not use loops to solve this problem.
-
+# We need to 3 times show number 5 for example
 
 def replicate(times, number)
   arr = Array.new

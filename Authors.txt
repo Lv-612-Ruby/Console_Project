@@ -1,6 +1,6 @@
 Nazarii Makohin - run tests, main file creatiang, github management, code refactoring
 
-Andrii Yazvinskyi - names of tests, created testAll, main file creatiang, github management, code refactoring
+Andrii Yazvinskyi - names of tests, created links to tasks, main file creatiang, github management, code refactoring
 
 Maksym Brehin - names of tasks, code refactoring
 
