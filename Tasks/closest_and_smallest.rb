@@ -1,6 +1,6 @@
 #kata 5
 #https://www.codewars.com/kata/5868b2de442e3fb2bb000119
-
+#we need to get a weight it's the sum of  digits
 #the smallest difference of weights ie that are the closest
 # with the smallest weights
 # and with the smallest indices (or ranks, numbered from 0) in strng

@@ -21,7 +21,7 @@ class Menu
   end
 
   def self.tests
-    puts Dir.entries("Tests").reject {|f| File.directory?(f) || f[0].include?('.')}
+    puts Dir.entries("Tests").reject {|f| File.directory?(f) }
   end
 
   def self.tasks
