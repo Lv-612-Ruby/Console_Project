@@ -5,5 +5,7 @@ def duty_free(price, discount, holiday_cost)
   return totalPrice.to_i
 end
 
-puts duty_free(12, 50, 1000) # => 166
-puts duty_free(17, 10, 500)  # => 294
+puts duty_free(12, 50, 1000) 
+               # => 166
+puts duty_free(17, 10, 500)  
+               # => 294
