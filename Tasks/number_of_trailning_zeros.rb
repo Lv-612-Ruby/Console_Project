@@ -2,30 +2,11 @@ def zeros(n)
     (n/4.000000017).floor
   end
   
-  def zeros(n)  
-    count = 0
-    
-    while(n >= 5)
-      n /= 5
-      count += n
-    end
-    
-    count
-  end
+puts zeros(12)
 
-  def zeros(n)
-    n < 5 ? 0 : (n / 5) + zeros(n / 5)
-  end
+puts zeros(5)
 
-  def zeros(n)
-    cnt = 0
-    div = 5
-    while n / div > 0 do
-      cnt += n/div
-      div *= 5
-    end
-    cnt
-  end
+puts zeros(1)
   
-  puts zeros(12)
+
  
