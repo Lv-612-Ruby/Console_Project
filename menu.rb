@@ -38,7 +38,8 @@ class Menu
   end
 
   def self.runtest(item)
-    %x[find . -name '*test.rb' | sort]
+    a = %x[find . -name '*test.rb' | sort]
+    all_tests = a.split
     all_tests.each do |x|
       system("rspec '#{all_tests[all_tests.index(x)]}'") if x.include? item
     end
