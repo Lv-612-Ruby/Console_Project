@@ -1,7 +1,7 @@
 #https://www.codewars.com/kata/57e92e91b63b6cbac20001e5/train/ruby
 
 def duty_free(price, discount, holiday_cost)
-	totalPrice = holiday_cost / (price * discount * 0.01)
+  totalPrice = holiday_cost / (price * discount * 0.01)
   return totalPrice.to_i
 end
 
