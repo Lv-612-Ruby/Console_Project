@@ -1,8 +1,0 @@
-#Kata 8 string_to_number
-
-def string_to_number(s)
-    number = s.to_i
-      return number
-  end
-    
-      

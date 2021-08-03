@@ -10,7 +10,7 @@ class Menu
     puts "    link_to_task - displays all tests".blue
     puts
     puts "    runtest file_name – launches the test contained in the file file_name".red
-    puts "    runtask file_name – launches the task contained in the file file_name".red
+    puts "    run file_name – launches the task contained in the file file_name".red
     puts "    show file_name - shows all the code contained in the file task/test file_name".yellow
     puts
     puts "    authors - info about each of contributors"
@@ -57,6 +57,6 @@ class Menu
         puts line
       end
     end
-  end
 
-end
+  end
+    end
